@@ -21,6 +21,6 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-        java-package: 'junit'
+        
     - name: java demo test
-      run: java DemoNew.java
+      run: java Demo.java
