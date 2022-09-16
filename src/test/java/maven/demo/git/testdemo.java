@@ -4,14 +4,14 @@ package maven.demo.git;
 
 import org.junit.jupiter.api.Test;
 
-class testdemo {
+class TestDemo {
 
 	@Test
-	void test1() {
-		System.out.println("in test1");
+	void whenTest() {
+		System.out.println("in testdemodemo1");
 	}
 	@Test
-	void test2() {
+	void testNew() {
 		System.out.println("in test2");
 	}
 
