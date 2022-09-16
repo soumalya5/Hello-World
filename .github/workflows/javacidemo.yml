@@ -23,4 +23,7 @@ jobs:
         distribution: 'temurin'
         
     - name: java demo test
-      run: java Demo.java
+      run: | 
+        java Demo.java
+        java Demo.java
+      
