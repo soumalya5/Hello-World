@@ -22,13 +22,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-        server-id: github 
-        settings-path: ${{ github.workspace }} 
-    - name: Install Google Chrome 
-      run: |
-
-              chmod +x ./scripts/InstallChrome.sh
-
-                          ./scripts/InstallChrome.sh
+    - uses: browser-actions/setup-chrome@latest
+    - run: chrome --version 
     - name: Build with Maven
       run: mvn clean test -Dtest=TestDemo
