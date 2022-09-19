@@ -26,7 +26,11 @@ class TestDemo {
 		WebDriver driver;
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
-		driver = new ChromeDriver();
+		options.addArguments("--no-sandbox");
+		options.addArguments("--start-maximized");
+		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--headless");
+		driver = new ChromeDriver(options);
 		String url="https://www.totaljobs.com";
 		driver.get(url);
 		driver.manage().window().maximize();
