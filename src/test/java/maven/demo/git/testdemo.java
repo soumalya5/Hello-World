@@ -15,16 +15,18 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 class TestDemo {
 
 	@Test
 	void whenTest() {
 		System.out.println("in testdemodemo1");
-		System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
-
-		WebDriver driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
+		WebDriver driver;
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
+		driver = new ChromeDriver();
 		String url="https://www.totaljobs.com";
 		driver.get(url);
 		driver.manage().window().maximize();
