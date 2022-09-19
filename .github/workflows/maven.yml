@@ -24,7 +24,7 @@ jobs:
         cache: maven
     - uses: browser-actions/setup-chrome@latest
       with: 
-          chrome-version: 106.0.5249.21
+          chrome-version: beta
     - run: chrome --version 
     - name: Build with Maven
       run: mvn clean test -Dtest=TestDemo
