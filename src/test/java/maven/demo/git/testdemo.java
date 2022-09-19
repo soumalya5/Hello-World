@@ -26,7 +26,9 @@ class TestDemo {
 		WebDriver driver;
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
-		driver = new ChromeDriver();
+		options.addArguments("--headless", "--start-maximized","--ignore-certificate-errors", "--silent");
+		driver = new ChromeDriver(options);
+		
 		driver.manage().window().maximize();
 		String url="https://www.totaljobs.com";
 		driver.get(url);
