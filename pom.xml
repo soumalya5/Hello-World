@@ -22,7 +22,7 @@
 	<dependency>  
 		<groupId>org.seleniumhq.selenium</groupId>  
 		<artifactId>selenium-java</artifactId>  
-		<version>4.3.0</version>  
+		<version>3.41.0</version>  
 	</dependency>    
 	<dependency>
 		    <groupId>com.google.guava</groupId>
@@ -40,7 +40,7 @@
 		<artifactId>guava-jdk5</artifactId>  
 		</exclusion>  
 		</exclusions>  
-	</dependency>  
+	</dependency>
 	<dependency>  
 		<groupId>com.google.code.gson</groupId>  
 		<artifactId>gson</artifactId>  
