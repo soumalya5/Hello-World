@@ -39,7 +39,7 @@ class TestDemo {
 		capabilities.setCapability("enableVNC", false);
 		capabilities.setCapability("enableVideo", false);
 		String url="https://www.totaljobs.com";
-		WebDriver driver=new RemoteWebDriver(new URL("http//localhost:4444/wd/hub"), capabilities);
+		WebDriver driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 		driver.get(url);
 		driver.manage().window().maximize();
 		System.out.println("The page title is : " +driver.getTitle());
