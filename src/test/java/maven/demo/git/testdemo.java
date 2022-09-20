@@ -27,19 +27,19 @@ class TestDemo {
 	void whenTest() throws MalformedURLException {
 		System.out.println("in testdemodemo1");
 		//System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
-//		WebDriver driver;
-//		WebDriverManager.chromedriver().version("105.0.5195.102").setup();
-//		ChromeOptions options = new ChromeOptions();
-//		options.addArguments("--headless", "--start-maximized","--ignore-certificate-errors", "--silent");
-//		driver = new ChromeDriver(options);
-//		
-//		driver.manage().window().maximize();
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("browserName","chrome");
-		capabilities.setCapability("enableVNC", false);
-		capabilities.setCapability("enableVideo", false);
+		WebDriver driver;
+		WebDriverManager.chromedriver().driverVersion("105.0.5195.52").setup();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless", "--start-maximized","--ignore-certificate-errors", "--silent");
+		driver = new ChromeDriver(options);
+		
+		driver.manage().window().maximize();
+//		DesiredCapabilities capabilities = new DesiredCapabilities();
+//		capabilities.setCapability("browserName","chrome");
+//		capabilities.setCapability("enableVNC", false);
+//		capabilities.setCapability("enableVideo", false);
 		String url="https://www.totaljobs.com";
-		WebDriver driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+		//WebDriver driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 		driver.get(url);
 		driver.manage().window().maximize();
 		System.out.println("The page title is : " +driver.getTitle());
