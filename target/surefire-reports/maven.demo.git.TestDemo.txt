@@ -1,14 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: maven.demo.git.TestDemo
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.625 s <<< FAILURE! - in maven.demo.git.TestDemo
-whenTest  Time elapsed: 4.607 s  <<< ERROR!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 106
-Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'SOUMALYA', ip: '192.168.0.104', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--no-sandbox, --disable-dev-shm-usage, --headless], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--no-sandbox, --disable-dev-shm-usage, --headless], extensions: []}}}]
-	at maven.demo.git.TestDemo.whenTest(TestDemo.java:36)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.967 s - in maven.demo.git.TestDemo
