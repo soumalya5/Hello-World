@@ -30,7 +30,7 @@ class TestDemo {
 		WebDriver driver;
 		WebDriverManager.chromedriver().driverVersion("104.0.5112.79").setup();
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless", "--start-maximized","--ignore-certificate-errors", );
+		options.addArguments("--headless", "--start-maximized","--ignore-certificate-errors" );
 		driver = new ChromeDriver(options);
 		
 		driver.manage().window().maximize();
