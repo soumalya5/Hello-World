@@ -28,7 +28,7 @@ class TestDemo {
 		System.out.println("in testdemodemo1");
 		//System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
 		WebDriver driver;
-		WebDriverManager.chromedriver().driverVersion("104.0.5112.79").setup();
+		WebDriverManager.chromedriver().driverVersion("107.0.5304.87").setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless", "--start-maximized","--ignore-certificate-errors" );
 		driver = new ChromeDriver(options);
