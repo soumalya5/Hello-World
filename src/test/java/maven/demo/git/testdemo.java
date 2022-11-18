@@ -28,10 +28,11 @@ class TestDemo {
 		System.out.println("in testdemodemo1");
 		//System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
 		WebDriver driver;
-		WebDriverManager.chromedriver().driverVersion("107.0.5304.87").setup();
+		//WebDriverManager.chromedriver().driverVersion("107.0.5304.87").setup();
 		ChromeOptions options = new ChromeOptions();
+		options.setCapability("browserVersion", "107.0.5304.87");
 		options.addArguments("--headless", "--start-maximized","--ignore-certificate-errors" );
-		driver = new ChromeDriver(options);
+		driver = new RemoteWebDriver(options);
 		
 		driver.manage().window().maximize();
 //		DesiredCapabilities capabilities = new DesiredCapabilities();
