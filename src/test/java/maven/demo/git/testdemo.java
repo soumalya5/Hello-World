@@ -32,7 +32,7 @@ class TestDemo {
 		ChromeOptions options = new ChromeOptions();
 		options.setCapability("browserVersion", "107");
 		options.addArguments("--headless", "--start-maximized","--ignore-certificate-errors" );
-		driver = new RemoteWebDriver(options);
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),options);
 		
 		driver.manage().window().maximize();
 //		DesiredCapabilities capabilities = new DesiredCapabilities();
