@@ -30,7 +30,7 @@ class TestDemo {
 		WebDriver driver;
 		//WebDriverManager.chromedriver().driverVersion("107.0.5304.87").setup();
 		ChromeOptions options = new ChromeOptions();
-		options.setCapability("browserVersion", "107.0.5304.87");
+		options.setCapability("browserVersion", "107");
 		options.addArguments("--headless", "--start-maximized","--ignore-certificate-errors" );
 		driver = new RemoteWebDriver(options);
 		
