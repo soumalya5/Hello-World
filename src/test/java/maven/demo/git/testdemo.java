@@ -31,7 +31,7 @@ class TestDemo {
 		//WebDriverManager.chromedriver().driverVersion("107.0.5304.87").setup();
 		ChromeOptions options = new ChromeOptions();
 		options.setCapability("browserVersion", "107");
-		options.addArguments("--headless", "--start-maximized","--ignore-certificate-errors" );
+		//options.addArguments("--headless", "--start-maximized","--ignore-certificate-errors" );
 		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),options);
 		
 		driver.manage().window().maximize();
