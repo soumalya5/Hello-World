@@ -25,7 +25,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Start selenoid
-      uses: n-ton4/selenoid-github-action@master
+     # uses: n-ton4/selenoid-github-action@master
+      uses: Xotabu4/selenoid-github-action@v2
       id: start-selenoid
       continue-on-error: false
       with:
